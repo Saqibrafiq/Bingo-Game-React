@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
-
 import "./styles.css";
-
 import { start } from "./Confetti";
 
 const that=this;
@@ -25,7 +23,7 @@ function Tile({ id, children, onToggle, isSet }) {
 
 
 const bingo = [
-  "Tool a walking meeting via phone",
+  "Took a walking meeting via phone",
   "Can you hear me?",
   "Joked about how long your 'commute is",
   "Said 'lol' and meant it",
