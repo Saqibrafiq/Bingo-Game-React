@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
 import "./styles.css";
 import { start } from "./Confetti";
-import shuffle from "shuffle-array";
 
 
 const that=this;
@@ -52,7 +51,7 @@ const bingo = [
   "Created a workday playlist"
 ];
 
-const data = shuffle(bingo).reduce(
+const data = bingo.reduce(
   (data, value, index) => ({ ...data, [index]: value }),
   {}
 );
