@@ -8,7 +8,7 @@ import shuffle from "shuffle-array";
 
 const that=this;
 function Confetti() {
- 
+
   
   useEffect(() => {
       start();
@@ -38,7 +38,6 @@ const bingo = [
   "Took a quick stroll to stretch your legs",
   "Sent a gif to a co-worker",
   "Took a coffee break.. or three",
-  "Covid-19 Pandemic",
   "Did eye strain relief exercises",
   "Sorry i was on mute",
   "Can everyone see my screen?",
@@ -46,19 +45,26 @@ const bingo = [
   "Used an emoji in an email",
   "Installed a blue light blocker on your computer",
   "Created a makeshift (standing desk)",
-  "Tried the pomodoro techniqui",
+  "Tried the pomodoro technique",
   "Did chair yoga",
   "Worked from your balcony",
   "Took a typing speed test for fun",
-  "Created a workday playlist"
+  "Created a workday playlist",
+  "Something extra"
 ];
 
-const data = shuffle(bingo).reduce(
-  (data, value, index) => ({ ...data, [index]: value }),
-  {}
-);
+
+const data= create_data()
+function create_data(){
+    var result = shuffle(bingo).reduce(
+    (data, value, index) => ({ ...data, [index]: value }),
+  {});
+  result[12]="Covid-19 Pandemic"
+  return result;
+}
 
 function refreshPage() {
+  console.log(data)
   window.location.reload(false);
 } 
 
