@@ -1,5 +1,9 @@
 # BINGO GAME
 
+Simple Pandemic BINGO GAME built on React JS. 
+
+Confetti used to celebrate BINGO.
+
 In the project directory, you can run:
 
 ### `npm start`
